@@ -1,0 +1,427 @@
+/**********html**********/
+:root{
+    --darkest: #092635;
+    --medium: #1B4242;
+    --medium-light: #5C8374;
+    --light: #9EC8B9;
+    --transparent-light: #9ec8b986;
+    --pink: #E95793;
+    --red:#B31312;
+}
+html{
+    margin: 0;
+    padding: 0%;
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: "header";
+    src: url(/fonts/bella-font/Bella-yw64Z.ttf);
+}
+@font-face {
+    font-family:"body" ;
+    src: url(/font2/Roboto_Mono/RobotoMono-VariableFont_wght.ttf);
+}
+/**********header and nav **********/
+.header{
+    min-height: 100vh;
+    width:100% ;
+    background-image: url(/images/bear-head.jpg);
+    background-size:cover ;
+    background-position: center;
+    border-radius: 1.25rem;
+    position: relative;
+    overflow: hidden;
+    margin-top: .3125rem;
+}
+#menu{
+    
+    list-style-type: none;
+    display: flex;
+    gap: 1.25rem;
+    justify-content: end;
+    font-family: "main";
+}
+#menu a{
+    text-decoration: none;
+    color: var(--dark-brown);
+    
+    font-family: "main";
+    gap: 1.25rem;
+    justify-content: end;
+    align-items: center;
+}
+nav{
+    display: flex;
+  padding: 3% 3%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--light);
+  border-radius: .625rem;
+  font-family: "header";
+    
+}
+#menu-toggle{
+    display: none;
+    background-color: var(--main-green);
+    color: var(--light-beige);
+    border: none;
+    font-family: "main";
+}
+#menu.active{
+display: flex;
+}
+nav img{
+    width: 6.25rem;
+}
+#menu {
+    list-style: none;
+    padding: .5rem .20rem;
+    font-family: "header";
+}
+#menu a{
+    color:var(--darkest);
+    text-decoration: none;
+    font-size: 1.175rem;
+    font-family: "header";
+}
+#menu :hover{
+    color: var(--pink);
+    transition: 0.5s;
+}
+.header-text{
+    width: 80%;
+    color: var(--light);
+    position: absolute;
+    top: 50%;
+    left: 11%;
+    text-align: center;
+    padding: .625rem;
+    border-radius: .625rem;
+}
+.header-text h1{
+    font-family: "header";
+    font-size: 2.25rem;
+}
+.header-text p{
+    font-family: "body";
+}
+.header-text a{
+    text-decoration: none;
+    color: var(--light);
+}
+
+#menu-toggle{
+    display: none;
+    background-color: var(--main-green);
+    color: var(--light-beige);
+    border: none;
+    font-family: "main";
+}
+#menu.active{
+display: flex;
+left: 4px;
+z-index: 10000000000;
+}
+
+
+/**********products**********/
+.products{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 90px;
+}
+.products h1{
+    font-size: 2.25rem;
+    font-family: "header";
+}
+.products p{
+    font-family: "body";
+    color: var(--darkest);
+    font-size: .9375rem;
+    padding: .625rem;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.collum{
+    flex-basis: 32%;
+    border-radius: .625rem;
+   margin-bottom: 1.875rem;
+   position: relative;
+   overflow: hidden;
+   
+}
+.collum img{
+    width: 100%;
+    
+}
+.collum h3{
+    font-family: "header";
+    font-size: larger;
+    color: var(--darkest);
+}
+.collum p{
+    text-align: center;
+}
+.collum a{
+    text-decoration: none;
+    color: var(--darkest);
+}
+.collum h3 :hover{
+    color: var(--pink);
+    transition: 0.2s;
+}
+.collum a :hover{
+    box-shadow: 0 0.2rem 1.25rem 0 rgba(0,0,0,0.5);
+}
+
+
+/**********christmas promotion **********/
+.christmas{
+    margin: 2.25rem auto;
+    width: 80%;
+    height: 45vh;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(/images/christmas-section.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: .625rem;
+    text-align: left;
+    padding: 6.25rem 2.5rem;
+    display: flex;
+}
+.christmas h1{
+    font-family: "header";
+    font-size: xx-large;
+    color: white;
+    background-color: var(--red);
+    padding: 1.25rem;
+    border-radius: .625rem;
+}
+/**********footer**********/
+.footer{
+    width: 100%;
+    position: relative;
+    margin-bottom: .625rem;
+    background-color:var(--transparent-light) ;
+    color: var(--darkest);
+    border-radius: .625rem;
+    font-size: .8125rem;
+    font-family: "body";
+}
+.footer-row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap:wrap ;
+    align-items: flex-start;
+    justify-content: space-between;
+   
+}
+.footer-colum{
+  flex-basis:25%;
+  padding: 10px;
+}
+.logo{
+    width:9rem;
+    margin-bottom: 1.875rem;
+}
+.footer-colum h3{
+    width: fit-content;
+    margin-bottom: 20px;
+    position: relative;
+    text-align: left;
+}
+.footer-colum p{
+    width: fit-content;
+    margin: 20px 0;
+    
+}
+.footer-colum ul li{
+    list-style: none;
+    margin-bottom: .75rem;
+    text-align: left;
+}
+.footer-colum ul li a{
+    text-decoration: none;
+    color: var(--darkest);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********** about us page**********/
+
+.header-about{
+    min-height: 60vh;
+    width:100% ;
+    background-image: url(/images/header.png);
+    background-size:cover;
+    background-position: right;
+    border-radius: 1.25rem;
+    position: relative;
+    overflow: hidden;
+}
+.header-text-about{
+    width: 80%;
+    color: var(--light);
+    position: absolute;
+    top: 50%;
+    left: 11%;
+    text-align: center;
+    background-color: var(--darkest);
+    padding: .625rem;
+    border-radius: .625rem;
+}
+.header-text-about h1{
+    font-family: "header";
+    font-size: 2.25rem;
+}
+.header-text-about p{
+    font-family: "body";
+}
+.our-story{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 1.25rem;
+}
+.our-story h1{
+    font-size: 2.25rem;
+    font-family: "header";
+}
+.our-story p{
+    font-family: "body";
+    color: var(--darkest);
+    font-size: .9375rem;
+    padding: .625rem;
+}
+.about-journey{
+    display: flex;
+    flex-direction: row;
+    row-gap: 1.875rem;
+    margin-top: 10px;
+    padding: 1.25rem;
+    background-color: var(--medium-light);
+}
+.about-journey img{
+    width: 50%;
+    border-radius: .625rem;
+}
+.about-txt{
+    text-align: left;
+    padding: .9375rem;
+}
+.about-txt h1{
+    font-family: "header";
+    color: var(--light);
+}
+.about-txt p{
+    font-family: "body";
+    color: var(--darkest);
+}
+.about-txt h3{
+    font-family: "header";
+    font-size: larger;
+    text-align: center;
+}
+.about-txt a{
+    text-decoration: none;
+    color: var(--light);
+}
+.about-txt h3 :hover{
+    color: var(--pink);
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**********mobile**********/
+@media  screen and (max-width: 43.75rem) {
+    .header-text h1{
+        font-size: 1.25rem;
+    }
+    .header-text{
+       top: 10.25rem;
+       left: 1.25rem;
+       padding: 1.5rem;
+       
+    }
+    .header-text-about{
+       display: none;
+    }
+    #menu-toggle{
+        display: block;
+        position: fixed;
+        z-index: 100000;
+    }
+    #menu{
+        display: none; 
+        position: fixed;
+        z-index: 100000;
+        flex-direction: column;
+        background-color: var(--light);
+        border-radius: .625rem;
+        justify-content: start;
+    }
+    nav img{
+        display: none;
+    }
+    nav{
+        position: fixed;
+        z-index: 2;
+    }
+    /********** products **********/
+    .row{
+        flex-direction: column;
+    }
+    .about-journey{
+        flex-direction: column;
+    }
+    .about-journey img{
+        width: 100%;
+    }
+    .about-txt{
+        text-align: center;
+    }
+    .christmas{
+        text-align: center;
+        background-position: right;
+
+    }
+    .christmas h1{
+        padding: .625rem;
+    }
+}
