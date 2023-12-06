@@ -15,17 +15,17 @@ html{
 }
 @font-face {
     font-family: "header";
-    src: url(/fonts/bella-font/Bella-yw64Z.ttf);
+    src: url(./fonts/bella-font/Bella-yw64Z.ttf);
 }
 @font-face {
     font-family:"body" ;
-    src: url(/font2/Roboto_Mono/RobotoMono-VariableFont_wght.ttf);
+    src: url(/.font2/Roboto_Mono/RobotoMono-VariableFont_wght.ttf);
 }
 /**********header and nav **********/
 .header{
     min-height: 100vh;
     width:100% ;
-    background-image: url(/images/bear-head.jpg);
+    background-image: url(./images/bear-head.jpg);
     background-size:cover ;
     background-position: center;
     border-radius: 1.25rem;
@@ -268,7 +268,7 @@ z-index: 10000000000;
 .header-about{
     min-height: 60vh;
     width:100% ;
-    background-image: url(/images/header.png);
+    background-image: url(./images/header.png);
     background-size:cover;
     background-position: right;
     border-radius: 1.25rem;
