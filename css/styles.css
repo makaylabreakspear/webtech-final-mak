@@ -180,32 +180,80 @@ z-index: 10000000000;
 
 
 /**********christmas promotion **********/
-.christmas{
-    margin: 2.25rem auto;
-    width: 80%;
-    height: 45vh;
-    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(../images/christmas-section.jpg);
-    background-position: center;
-    background-size: cover;
-    border-radius: .625rem;
-    text-align: left;
-    padding: 6.25rem 2.5rem;
+.container{
+    max-width: 69.5rem ;
+    margin: auto;
+    padding-left: 1.5625rem;
+    padding-right: 1.5625rem;
     display: flex;
+    flex-direction: column;
+
 }
-.christmas h1{
+.christmas{
+    margin: 4.375rem 0;
+    background:radial-gradient( #1B4242,#E95793);
+}
+.christmas-row{
+    flex-direction: row;
+    display: flex;
+    text-align: left;
+}
+.christmas-collum{
+    flex-basis: 100%;
+    min-width: 19.625rem;
+    margin-bottom: 0.875rem;
+}
+.christmas-collum img{
+    width: 100%;
+    border-radius: .625rem;
+}
+.christmas-collum{
+    flex-basis: 100%;
+    min-width: 19.625rem;
+    margin-bottom: 0.875rem;
+}
+.christmas-collum h1{
+    padding-left: 5.25rem;
     font-family: "header";
-    font-size: xx-large;
-    color: white;
-    background-color: var(--red);
+    font-size: xxx-large;
+    color: var(--light);
+}
+.christmas-collum p{
+    padding-left: 5.25rem;
+    font-family: "header";
+    font-size: medium;
+    color: var(--light);
+}
+.christmas-collum a{
+    text-decoration: none;
+    color: var(--darkest);
+    background-color: #9EC8B9;
     padding: 1.25rem;
     border-radius: .625rem;
 }
+.christmas-collum p :hover{
+    background-color: var(--red);
+    color: var(white);
+   transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /**********footer**********/
 .footer{
     width: 100%;
     position: relative;
     margin-bottom: .625rem;
-    background-color:var(--transparent-light) ;
+    background-color:var(--medium-light) ;
     color: var(--darkest);
     border-radius: .625rem;
     font-size: .8125rem;
@@ -248,8 +296,16 @@ z-index: 10000000000;
     text-decoration: none;
     color: var(--darkest);
 }
-
-
+hr{
+    width:90% ;
+    border: 0;
+    border-bottom:2px solid var(--darkest) ;
+    margin: auto;
+}
+.copy{
+   text-align: center; 
+   margin-bottom: .0925rem;
+}
 
 
 
@@ -265,90 +321,41 @@ z-index: 10000000000;
 
 /********** about us page**********/
 
-.header-about{
-    min-height: 60vh;
+.our-story{
+    min-height: 100vh;
     width:100% ;
-    background-image: url(../images/header.png);
-    background-size:cover;
-    background-position: right;
+    background-image: linear-gradient(to bottom, rgba(59, 92, 79, 0.73), rgba(139, 188, 170, 0.73)), url(../images/about-img.jpg);
+    background-size:cover ;
+    background-position: center;
     border-radius: 1.25rem;
     position: relative;
     overflow: hidden;
-}
-.header-text-about{
-    width: 80%;
-    color: var(--light);
-    position: absolute;
-    top: 50%;
-    left: 11%;
-    text-align: center;
-    background-color: var(--darkest);
-    padding: .625rem;
-    border-radius: .625rem;
-}
-.header-text-about h1{
-    font-family: "header";
-    font-size: 2.25rem;
-}
-.header-text-about p{
-    font-family: "body";
-}
-.our-story{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 90px;
-    padding-bottom: 1.25rem;
+    margin-top: .3125rem;
 }
 .our-story h1{
-    font-size: 2.25rem;
+    width: 80%;
+    color: var(--darkest);
+    position: absolute;
+    top: 20%;
+    left: 11%;
+    text-align: center;
+    padding: .625rem;
+    border-radius: .625rem;
     font-family: "header";
+    font-size: 5rem;
 }
 .our-story p{
-    font-family: "body";
+    width: 80%;
     color: var(--darkest);
-    font-size: .9375rem;
-    padding: .625rem;
-}
-.about-journey{
-    display: flex;
-    flex-direction: row;
-    row-gap: 1.875rem;
-    margin-top: 10px;
-    padding: 1.25rem;
-    background-color: var(--medium-light);
-}
-.about-journey img{
-    width: 50%;
-    border-radius: .625rem;
-}
-.about-txt{
-    text-align: left;
-    padding: .9375rem;
-}
-.about-txt h1{
-    font-family: "header";
-    color: var(--light);
-}
-.about-txt p{
-    font-family: "body";
-    color: var(--darkest);
-}
-.about-txt h3{
-    font-family: "header";
-    font-size: larger;
+    position: absolute;
+    top: 40%;
+    left: 11%;
     text-align: center;
+    padding: .625rem;
+    border-radius: .625rem;
+    font-family: "body";
+    font-size: medium;
 }
-.about-txt a{
-    text-decoration: none;
-    color: var(--light);
-}
-.about-txt h3 :hover{
-    color: var(--pink);
-    transition: 0.5s;
-}
-
-
 
 
 
@@ -423,5 +430,43 @@ z-index: 10000000000;
     }
     .christmas h1{
         padding: .625rem;
+    }
+    .footer{
+        bottom: unset;
+    }
+    .footer-colum{
+        flex-basis: 100%;
+    }
+    .christmas-row{
+        flex-direction: column;
+    }
+    .christmas{
+        border-radius: .625rem;
+    }
+    .christmas-collum p{
+        text-align: center;
+        padding-left: 0;
+    }
+    .christmas-collum h1{
+        text-align: center;
+        padding-left: 0;
+    }
+    .our-story h1{
+        font-size: 2.25rem;
+    }
+    .our-story h1{
+       top: 0rem;
+       left: 1.25rem;
+       padding: 1.5rem;
+       
+    }
+    .our-story p{
+        font-size: .875rem;
+    }
+    .our-story p{
+       top: 3.25rem;
+       left: 1.25rem;
+       padding: 1.5rem;
+       
     }
 }
