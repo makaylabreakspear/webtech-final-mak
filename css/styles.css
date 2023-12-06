@@ -268,7 +268,7 @@ z-index: 10000000000;
 .header-about{
     min-height: 60vh;
     width:100% ;
-    background-image: url(../images/header.png);
+    background-image: url(.../images/header.png);
     background-size:cover;
     background-position: right;
     border-radius: 1.25rem;
